@@ -1,0 +1,210 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VR Electronics Retail — Online Store</title>
+<style>
+:root{--g:#d4af37;--r:#d71920;--k:#0b0b0b;--bg:#f6f6f6;--line:#e4e0d5;--muted:#6d6a62;--green:#16834b}*{box-sizing:border-box}body{margin:0;font-family:Arial;background:var(--bg);color:#171717}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:#090909;color:#ddd;padding:7px 5%;font-size:12px;display:flex;justify-content:space-between}.top b{color:var(--g)}header{background:#111;color:white;position:sticky;top:0;z-index:20}.head{min-height:74px;display:flex;align-items:center;gap:22px;padding:10px 5%;flex-wrap:wrap}.logo{font-weight:900;font-size:24px;white-space:nowrap}.logo b{color:var(--g);font:italic 900 32px Georgia}.logo small{display:block;font:9px Arial;letter-spacing:2px;text-align:center;color:#aaa}.search{display:flex;flex:1;max-width:720px}.search input{flex:1;border:0;padding:13px;border-radius:8px 0 0 8px}.search button{border:0;background:var(--g);padding:0 18px;border-radius:0 8px 8px 0;font-weight:bold}.actions{display:flex;gap:12px}.actions button{border:0;background:none;color:#fff}.cart{position:relative}.cart i{position:absolute;background:var(--r);border-radius:50%;font-size:10px;width:18px;height:18px;right:-7px;top:-8px;display:grid;place-items:center;font-style:normal}.nav{background:#1d1d1d}.navin{display:flex;gap:25px;padding:0 5%;overflow:auto}.nav button{background:none;border:0;color:#ddd;padding:12px 0;white-space:nowrap}.nav button:hover{color:var(--g)}.hero{margin:18px 5%;padding:48px 7%;border-radius:18px;color:#fff;background:linear-gradient(110deg,#090909,#191919 55%,#641317);min-height:300px}.hero h1{font:900 43px Georgia;margin:0}.hero h1 span{color:var(--g)}.hero p{max-width:570px;line-height:1.6;color:#ddd}.gold{background:var(--g);border:0;padding:12px 20px;border-radius:8px;font-weight:900}.outline{background:none;color:var(--g);border:1px solid var(--g);padding:11px 18px;border-radius:8px;margin-left:8px}.wrap{padding:0 5%}.headrow{display:flex;justify-content:space-between;align-items:end;margin:25px 0 14px}.headrow h2{margin:0}.headrow p{margin:4px 0;color:var(--muted);font-size:12px}.cats{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}.cat{background:white;border:1px solid var(--line);border-radius:12px;padding:18px 5px;text-align:center;font-weight:bold;font-size:12px}.cat span{display:block;font-size:30px;margin-bottom:7px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#fff;border:1px solid var(--line);border-radius:13px;overflow:hidden;position:relative}.pic{height:210px}.pic img{width:100%;height:100%;object-fit:cover}.heart{position:absolute;right:9px;top:9px;border:0;background:#fff;border-radius:50%;width:34px;height:34px;font-size:19px}.heart.on{color:var(--r)}.body{padding:13px}.brand{font-size:10px;color:#8b7650;font-weight:bold;text-transform:uppercase}.name{font-weight:bold;height:38px;margin:5px 0;font-size:14px}.stars{color:#dca800;font-size:12px}.price{font-size:19px;font-weight:900;margin-top:5px}.mrp{font-size:11px;color:#999;text-decoration:line-through;font-weight:normal}.off{font-size:10px;color:var(--green)}.stock{color:var(--green);font-size:10px;margin:7px 0}.add{width:100%;background:var(--r);color:#fff;border:0;padding:10px;border-radius:8px;font-weight:bold}.banner{margin:30px 0;padding:25px 30px;background:#111;color:#fff;border-radius:14px;display:flex;justify-content:space-between;align-items:center}.banner strong{color:var(--g);font:24px Georgia}footer{margin-top:45px;background:#111;color:#bbb;padding:35px 5%}.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}footer h3{color:#fff}footer strong{color:var(--g)}.drawer{position:fixed;right:0;top:0;bottom:0;width:min(530px,100%);background:#fff;z-index:60;padding:23px;overflow:auto;box-shadow:-15px 0 50px #0003}.overlay{position:fixed;inset:0;background:#0008;z-index:50}.close{float:right;border:0;background:#eee;border-radius:50%;width:33px;height:33px}.hidden{display:none!important}.item{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.item img{width:75px;height:75px;object-fit:cover;border-radius:8px}.qty{display:flex;gap:8px;align-items:center;margin-top:7px}.qty button{border:1px solid #ddd;background:#fff;width:26px;height:26px;border-radius:5px}.summary{background:#faf7ed;padding:14px;border-radius:10px;margin-top:16px}.row{display:flex;justify-content:space-between;margin:7px 0}.grand{border-top:1px solid #ddd;padding-top:9px;font-size:19px;font-weight:900}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form .full{grid-column:1/-1}.form label{display:block;font-size:11px;font-weight:bold;margin-bottom:4px}.form input,.form select,.form textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px}.order{border:1px solid var(--line);border-radius:9px;padding:12px;margin:9px 0}.badge{display:inline-block;padding:5px 8px;border-radius:20px;font-size:10px;font-weight:bold;background:#eaf8f0;color:#126e40}
+@media(max-width:1050px){.products{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(4,1fr)}}@media(max-width:720px){.head{padding:10px 4%}.search{order:3;flex-basis:100%;max-width:none}.hero,.wrap{margin-left:4%;margin-right:4%}.wrap{padding-left:0;padding-right:0}.products{grid-template-columns:repeat(2,1fr)}.cats{grid-template-columns:repeat(2,1fr)}.fg{grid-template-columns:1fr 1fr}}@media(max-width:450px){.products{grid-template-columns:1fr}.pic{height:220px}.fg{grid-template-columns:1fr}}
+
+.adminBtn{background:var(--g)!important;color:#111!important;border-radius:7px;padding:8px 11px!important;font-weight:900}
+.adminPanel{position:fixed;inset:0;background:#f5f5f5;z-index:80;overflow:auto}
+.adminHead{position:sticky;top:0;background:#111;color:#fff;padding:14px 4%;display:flex;align-items:center;justify-content:space-between;z-index:2}
+.adminHead h2{margin:0;color:var(--g);font-family:Georgia}
+.adminBody{padding:22px 4%;max-width:1450px;margin:auto}
+.adminTabs{display:flex;gap:8px;overflow:auto;margin-bottom:16px}
+.adminTabs button{border:1px solid #ddd;background:#fff;padding:10px 14px;border-radius:8px;font-weight:800;white-space:nowrap}
+.adminTabs button.on{background:#111;color:#fff;border-color:#111}
+.adminCard{background:#fff;border:1px solid #ddd;border-radius:12px;padding:16px;margin-bottom:15px}
+.adminGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.adminGrid .full{grid-column:1/-1}
+.adminCard input,.adminCard select,.adminCard textarea{width:100%;padding:9px;border:1px solid #ddd;border-radius:7px}
+.adminTable{width:100%;border-collapse:collapse;font-size:12px}
+.adminTable th,.adminTable td{padding:9px;border-bottom:1px solid #eee;text-align:left;vertical-align:middle}
+.adminTable th{background:#faf7ed}
+.adminThumb{width:58px;height:48px;object-fit:cover;border-radius:6px;border:1px solid #ddd}
+.adminActions{display:flex;gap:6px;flex-wrap:wrap}
+.adminActions button{border:0;padding:7px 9px;border-radius:6px;background:#111;color:#fff;font-size:11px}
+.adminActions .danger{background:#c71922}
+.adminActions .goldBtn{background:var(--g);color:#111}
+.statGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:#111;color:#fff;padding:16px;border-radius:10px}.stat b{font-size:23px;color:var(--g);display:block;margin-top:5px}
+.preview{width:130px;height:100px;object-fit:contain;border:1px dashed #aaa;border-radius:8px;background:#fafafa}
+@media(max-width:900px){.adminGrid,.statGrid{grid-template-columns:repeat(2,1fr)}.adminTable{display:block;overflow:auto;white-space:nowrap}}
+@media(max-width:500px){.adminGrid,.statGrid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="top"><span>🚚 Free delivery within 5 km of Borivali West</span><span><b>EMI</b> Available • Secure Payments • Brand Warranty Assistance</span></div>
+<header><div class="head"><div class="logo"><b>VR</b> ELECTRONICS<small>RETAIL • ONLINE STORE</small></div><div class="search"><input id="q" placeholder="Search TVs, laptops, mobiles, refrigerators..." oninput="render()"><button onclick="render()">🔍</button></div><div class="actions"><button onclick="account()">👤 Account</button><button onclick="adminLogin()">⚙ Admin</button><button onclick="cartOpen()" class="cart">🛒<i id="count">0</i></button></div></div>
+<div class="nav"><div class="navin" id="navCats"></div></div></header>
+<section class="hero"><h1>Technology.<br><span>Trusted Locally.</span></h1><p>Shop leading electronics and home appliances from trusted brands with local delivery and customer support from VR Electronics Retail.</p><button class="gold" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Now</button><button class="outline" onclick="cartOpen()">View Cart</button></section>
+<div class="wrap"><div class="headrow"><div><h2>Shop by Category</h2><p>Everything for your home and digital life</p></div></div>
+<div class="cats" id="catTiles"></div><div id="shop"><div class="headrow"><div><h2>Featured Products</h2><p id="result"></p></div><select id="sort" onchange="render()"><option value="f">Featured</option><option value="l">Price Low to High</option><option value="h">Price High to Low</option></select></div><div class="products" id="products"></div></div>
+<div class="banner"><div><strong>Golden Deals. Red-Hot Prices.</strong><br>Easy EMI • Secure payments • Local delivery • Trusted brands</div><button class="gold" onclick="cat('Offers')">View Offers</button></div></div>
+<footer><div class="fg"><div><div class="logo"><b>VR</b> ELECTRONICS<small>RETAIL • ONLINE STORE</small></div><p>Shop No. 5 & 6, Vraj Plaza, L.T. Road, Borivali West, Mumbai, Maharashtra 400092.</p><strong>+91 98765 43210</strong><br>info@vrelectronics.in</div><div><h3>Shop</h3>TVs<br>Refrigerators<br>ACs<br>Laptops<br>Mobiles</div><div><h3>Customer</h3>My Account<br>Orders<br>Returns<br>Warranty</div><div><h3>Services</h3>EMI<br>Free 5 km Delivery<br>Installation Coordination<br>Warranty Registration</div></div></footer>
+
+<div id="admin" class="adminPanel hidden">
+  <div class="adminHead">
+    <h2>VR Electronics — Admin</h2>
+    <button class="gold" onclick="closeAdmin()">Close Admin</button>
+  </div>
+  <div class="adminBody">
+    <div class="adminTabs">
+      <button id="tabDashboard" onclick="adminTab('dashboard')">Dashboard</button>
+      <button id="tabProducts" onclick="adminTab('products')">Products & Photos</button>
+      <button id="tabCategories" onclick="adminTab('categories')">Categories</button>
+      <button id="tabOrders" onclick="adminTab('orders')">Orders / Transactions</button>
+      <button id="tabSettings" onclick="adminTab('settings')">Store Settings</button>
+    </div>
+    <div id="adminContent"></div>
+  </div>
+</div>
+<div id="ov" class="overlay hidden" onclick="closeD()"></div><div id="dr" class="drawer hidden"></div>
+<script>
+const DEFAULT_PRODUCTS=[{"id": 1, "name": "Samsung 55\" 4K Smart TV", "brand": "Samsung", "cat": "Televisions", "mrp": 68990, "sale": 59990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iNTUiIHk9IjU1IiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjE3MCIgcng9IjEyIiBmaWxsPSIjMjAyMDIwIi8+PHJlY3QgeD0iNzAiIHk9IjcwIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEzNSIgZmlsbD0iIzExMSIvPjxyZWN0IHg9IjE2MCIgeT0iMjI4IiB3aWR0aD0iODAiIGhlaWdodD0iOSIgcng9IjQiIGZpbGw9IiNkNGFmMzciLz48dGV4dCB4PSIyMDAiIHk9IjM2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIj5TYW1zdW5nIDU1IiA0SyBTbWFydCBUVjwvdGV4dD48L3N2Zz4=", "rating": 4.3}, {"id": 2, "name": "LG 655L Frost Free Refrigerator", "brand": "LG", "cat": "Refrigerators", "mrp": 98990, "sale": 82990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iMTA1IiB5PSIzNSIgd2lkdGg9IjE5MCIgaGVpZ2h0PSIzMDAiIHJ4PSIxOCIgZmlsbD0iI2U2ZTZlNiIvPjxsaW5lIHgxPSIxMDUiIHkxPSIxNzAiIHgyPSIyOTUiIHkyPSIxNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHJlY3QgeD0iMjU1IiB5PSI3MCIgd2lkdGg9IjgiIGhlaWdodD0iNzAiIGZpbGw9IiNkNGFmMzciLz48cmVjdCB4PSIyNTUiIHk9IjIwNSIgd2lkdGg9IjgiIGhlaWdodD0iNzAiIGZpbGw9IiNkNGFmMzciLz48dGV4dCB4PSIyMDAiIHk9IjM2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIj5MRyA2NTVMIEZyb3N0IEZyZWUgUmVmcmlnZXJhdG9yPC90ZXh0Pjwvc3ZnPg==", "rating": 4.4}, {"id": 3, "name": "Daikin 1.5 Ton Inverter AC", "brand": "Daikin", "cat": "Air Conditioners", "mrp": 52400, "sale": 45990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iNDUiIHk9IjEwNSIgd2lkdGg9IjMxMCIgaGVpZ2h0PSI5NSIgcng9IjIyIiBmaWxsPSIjZWVlIi8+PHJlY3QgeD0iNzAiIHk9IjE2NSIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3IiBmaWxsPSIjZDRhZjM3Ii8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+RGFpa2luIDEuNSBUb24gSW52ZXJ0ZXIgQUM8L3RleHQ+PC9zdmc+", "rating": 4.5}, {"id": 4, "name": "Apple MacBook Air 13\"", "brand": "Apple", "cat": "Laptops", "mrp": 114900, "sale": 99990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iODUiIHk9IjUwIiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjE3MCIgcng9IjEyIiBmaWxsPSIjYWFhIi8+PHJlY3QgeD0iMTAwIiB5PSI2NSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMxMTEiLz48cGF0aCBkPSJNNTAgMjMwaDMwMGwtMzUgMzVIODV6IiBmaWxsPSIjZDRhZjM3Ii8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+QXBwbGUgTWFjQm9vayBBaXIgMTMiPC90ZXh0Pjwvc3ZnPg==", "rating": 4.6}, {"id": 5, "name": "Apple iPhone 16 128GB", "brand": "Apple", "cat": "Mobile Phones", "mrp": 69900, "sale": 64990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iMTI1IiB5PSIzMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzMDAiIHJ4PSIyNSIgZmlsbD0iI2Q3MTkyMCIvPjxyZWN0IHg9IjEzOCIgeT0iNTgiIHdpZHRoPSIxMjQiIGhlaWdodD0iMjQ1IiByeD0iMTYiIGZpbGw9IiMxMTEiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI3MiIgcj0iNSIgZmlsbD0iI2Q0YWYzNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiPkFwcGxlIGlQaG9uZSAxNiAxMjhHQjwvdGV4dD48L3N2Zz4=", "rating": 4.7}, {"id": 6, "name": "LG 9kg Front Load Washing Machine", "brand": "LG", "cat": "Washing Machines", "mrp": 48990, "sale": 41990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iOTUiIHk9IjQwIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwMCIgcng9IjE4IiBmaWxsPSIjZWVlIi8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMTk1IiByPSI3MiIgZmlsbD0iIzIyMiIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE5NSIgcj0iNTUiIGZpbGw9IiNkNGFmMzciLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxOTUiIHI9IjQyIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+TEcgOWtnIEZyb250IExvYWQgV2FzaGluZyBNYWNoaW5lPC90ZXh0Pjwvc3ZnPg==", "rating": 4.8}, {"id": 7, "name": "Samsung Mixer Grinder 750W", "brand": "Samsung", "cat": "Small Appliances", "mrp": 8990, "sale": 6490, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iOTUiIHk9IjQwIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwMCIgcng9IjE4IiBmaWxsPSIjMjkyOTI5Ii8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMTk1IiByPSI3MiIgZmlsbD0iIzIyMiIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE5NSIgcj0iNTUiIGZpbGw9IiNkNGFmMzciLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxOTUiIHI9IjQyIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+U2Ftc3VuZyBNaXhlciBHcmluZGVyIDc1MFc8L3RleHQ+PC9zdmc+", "rating": 4.2}, {"id": 8, "name": "Sony Wireless Headphones", "brand": "Sony", "cat": "Accessories", "mrp": 29990, "sale": 22990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iMTI1IiB5PSIzMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzMDAiIHJ4PSIyNSIgZmlsbD0iIzExMSIvPjxyZWN0IHg9IjEzOCIgeT0iNTgiIHdpZHRoPSIxMjQiIGhlaWdodD0iMjQ1IiByeD0iMTYiIGZpbGw9IiMxMTEiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI3MiIgcj0iNSIgZmlsbD0iI2Q0YWYzNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiPlNvbnkgV2lyZWxlc3MgSGVhZHBob25lczwvdGV4dD48L3N2Zz4=", "rating": 4.3}, {"id": 9, "name": "HP 15.6\" Laptop", "brand": "HP", "cat": "Laptops", "mrp": 67990, "sale": 57990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iODUiIHk9IjUwIiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjE3MCIgcng9IjEyIiBmaWxsPSIjMzMzIi8+PHJlY3QgeD0iMTAwIiB5PSI2NSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMxMTEiLz48cGF0aCBkPSJNNTAgMjMwaDMwMGwtMzUgMzVIODV6IiBmaWxsPSIjZDRhZjM3Ii8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+SFAgMTUuNiIgTGFwdG9wPC90ZXh0Pjwvc3ZnPg==", "rating": 4.4}, {"id": 10, "name": "Vivo V40 5G", "brand": "Vivo", "cat": "Mobile Phones", "mrp": 39999, "sale": 34999, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iMTI1IiB5PSIzMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzMDAiIHJ4PSIyNSIgZmlsbD0iIzMwM2I2MiIvPjxyZWN0IHg9IjEzOCIgeT0iNTgiIHdpZHRoPSIxMjQiIGhlaWdodD0iMjQ1IiByeD0iMTYiIGZpbGw9IiMxMTEiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI3MiIgcj0iNSIgZmlsbD0iI2Q0YWYzNyIvPjx0ZXh0IHg9IjIwMCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiPlZpdm8gVjQwIDVHPC90ZXh0Pjwvc3ZnPg==", "rating": 4.5}, {"id": 11, "name": "Sony Bravia 65\" OLED TV", "brand": "Sony", "cat": "Televisions", "mrp": 159990, "sale": 139990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iNTUiIHk9IjU1IiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjE3MCIgcng9IjEyIiBmaWxsPSIjMTUxNTE1Ii8+PHJlY3QgeD0iNzAiIHk9IjcwIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjEzNSIgZmlsbD0iIzExMSIvPjxyZWN0IHg9IjE2MCIgeT0iMjI4IiB3aWR0aD0iODAiIGhlaWdodD0iOSIgcng9IjQiIGZpbGw9IiNkNGFmMzciLz48dGV4dCB4PSIyMDAiIHk9IjM2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIj5Tb255IEJyYXZpYSA2NSIgT0xFRCBUVjwvdGV4dD48L3N2Zz4=", "rating": 4.6}, {"id": 12, "name": "Voltas 1.5 Ton Split AC", "brand": "Voltas", "cat": "Air Conditioners", "mrp": 45990, "sale": 38990, "img": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzgwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM4MCIgcng9IjI1IiBmaWxsPSIjZjVmMGU1Ii8+PHJlY3QgeD0iNDUiIHk9IjEwNSIgd2lkdGg9IjMxMCIgaGVpZ2h0PSI5NSIgcng9IjIyIiBmaWxsPSIjZWVlIi8+PHJlY3QgeD0iNzAiIHk9IjE2NSIgd2lkdGg9IjI2MCIgaGVpZ2h0PSI3IiBmaWxsPSIjZDRhZjM3Ii8+PHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCI+Vm9sdGFzIDEuNSBUb24gU3BsaXQgQUM8L3RleHQ+PC9zdmc+", "rating": 4.7}];let P=JSON.parse(localStorage.getItem('vrProducts')||'null')||DEFAULT_PRODUCTS.map(x=>({...x}));let C=JSON.parse(localStorage.getItem('vrCart')||'[]');JSON.parse(localStorage.getItem('vrCart')||'[]'),W=JSON.parse(localStorage.getItem('vrWish')||'[]'),O=JSON.parse(localStorage.getItem('vrOrders')||'[]'),CAT='All';
+const money=n=>'₹'+Number(n).toLocaleString('en-IN');
+function save(){localStorage.setItem('vrCart',JSON.stringify(C));localStorage.setItem('vrWish',JSON.stringify(W));localStorage.setItem('vrOrders',JSON.stringify(O));localStorage.setItem('vrProducts',JSON.stringify(P));localStorage.setItem('vrCategories',JSON.stringify(CATS||[]));document.getElementById('count').textContent=C.reduce((a,x)=>a+x.q,0)}
+function cat(x){CAT=x;document.getElementById('q').value='';document.getElementById('shop').scrollIntoView({behavior:'smooth'});render()}
+function render(){let q=document.getElementById('q').value.toLowerCase(),s=document.getElementById('sort').value,a=P.filter(p=>(CAT==='All'||(CAT==='Offers'?p.mrp-p.sale>5000:p.cat===CAT))&&(!q||(p.name+' '+p.brand+' '+p.cat).toLowerCase().includes(q)));if(s==='l')a.sort((x,y)=>x.sale-y.sale);if(s==='h')a.sort((x,y)=>y.sale-x.sale);document.getElementById('result').textContent=a.length+' products available';document.getElementById('products').innerHTML=a.map(p=>`<div class="product"><button class="heart ${W.includes(p.id)?'on':''}" onclick="wish(${p.id})">${W.includes(p.id)?'♥':'♡'}</button><div class="pic"><img src="${p.img}"></div><div class="body"><div class="brand">${p.brand}</div><div class="name">${p.name}</div><div class="stars">★★★★★ <span style="color:#888">(${p.rating})</span></div><div class="price">${money(p.sale)} <span class="mrp">${money(p.mrp)}</span> <span class="off">${Math.round((1-p.sale/p.mrp)*100)}% off</span></div><div class="stock" style="${p.stock==='Out of Stock'?'color:#c71922':''}">● ${p.stock||'In Stock'}</div><button class="add" ${p.stock==='Out of Stock'?'disabled style="opacity:.45;cursor:not-allowed"' : ''} onclick="add(${p.id})">${p.stock==='Out of Stock'?'Out of Stock':'Add to Cart'}</button></div></div>`).join('')}
+function add(id){let p=P.find(p=>p.id===id);if(!p||p.stock==='Out of Stock')return toast('Product is out of stock');let x=C.find(a=>a.id===id);x?x.q++:C.push({id,q:1});save();toast('Added to cart')}
+function wish(id){W=W.includes(id)?W.filter(x=>x!==id):W.concat(id);save();render()}
+function cartOpen(){let total=C.reduce((a,x)=>a+P.find(p=>p.id===x.id).sale*x.q,0);openD(`<h2>Shopping Cart</h2>${C.length?C.map(x=>{let p=P.find(p=>p.id===x.id);return `<div class="item"><img src="${p.img}"><div style="flex:1"><b>${p.name}</b><br>${money(p.sale)}<div class="qty"><button onclick="chg(${p.id},-1)">−</button>${x.q}<button onclick="chg(${p.id},1)">+</button><button onclick="rem(${p.id})" style="border:0;background:none;color:red">Remove</button></div></div></div>`}).join('')+`<div class="summary"><div class="row"><span>Subtotal</span><b>${money(total)}</b></div><div class="row"><span>Delivery</span><b>FREE</b></div><div class="row grand"><span>Total</span><b>${money(total)}</b></div><button class="gold" style="width:100%;margin-top:10px" onclick="checkout()">Proceed to Checkout</button></div>`:'<div style="padding:40px;text-align:center">Your cart is empty.</div>'}`)}
+function chg(id,d){let x=C.find(a=>a.id===id);x.q+=d;if(x.q<1)C=C.filter(a=>a.id!==id);save();cartOpen()}function rem(id){C=C.filter(a=>a.id!==id);save();cartOpen()}
+function checkout(){if(!C.length)return;let total=C.reduce((a,x)=>a+P.find(p=>p.id===x.id).sale*x.q,0);openD(`<h2>Checkout</h2><span class="badge">🔒 Secure Checkout</span><h3>Delivery Address</h3><div class="form"><div><label>Full Name</label><input id="n"></div><div><label>Mobile</label><input id="m"></div><div class="full"><label>Address</label><textarea id="a" rows="3"></textarea></div><div><label>City</label><input id="city" value="Mumbai"></div><div><label>Pincode</label><input id="pin"></div><div class="full"><label>Payment</label><select id="pay"><option>UPI</option><option>Credit / Debit Card</option><option>Net Banking</option><option>Cash on Delivery</option><option>EMI — Bajaj Finserv</option><option>EMI — HDFC</option><option>EMI — ICICI</option><option>EMI — TVS Credit</option></select></div></div><div class="summary"><div class="row grand"><span>Total</span><b>${money(total)}</b></div><button class="gold" style="width:100%" onclick="place()">Place Order</button></div>`)}
+function place(){if(!n.value||!m.value||!a.value||!pin.value)return alert('Complete delivery details.');let total=C.reduce((a,x)=>a+P.find(p=>p.id===x.id).sale*x.q,0),no='VRE-ORD-'+String(Date.now()).slice(-7);O.unshift({no,date:new Date().toLocaleDateString('en-IN'),total,status:'Confirmed',payment:pay.value,name:n.value});C=[];save();openD(`<div style="text-align:center;padding:50px 10px"><div style="font-size:60px;color:#16834b">✓</div><h2>Order Confirmed</h2><p>Order <b>${no}</b> has been placed.</p><p>Total: <b>${money(total)}</b></p><span class="badge">CONFIRMED</span><br><br><button class="gold" onclick="account()">View My Orders</button></div>`)}
+function account(){openD(`<h2>My Account</h2><div class="order"><b>VR Electronics Customer</b><br><small>Orders, wishlist and shopping history</small></div><h3>My Orders</h3>${O.length?O.map(o=>`<div class="order"><b>${o.no}</b><br>${o.date}<br>${money(o.total)}<br><span class="badge">${o.status}</span> • ${o.payment}</div>`).join(''):'<p>No orders yet.</p>'}<h3>Wishlist</h3><p>${W.length} saved product(s)</p>`)}
+function openD(x){dr.innerHTML='<button class="close" onclick="closeD()">×</button>'+x;dr.classList.remove('hidden');ov.classList.remove('hidden')}function closeD(){dr.classList.add('hidden');ov.classList.add('hidden')}function toast(x){let t=document.createElement('div');t.textContent=x;t.style='position:fixed;right:20px;bottom:20px;background:#111;color:#fff;padding:13px 17px;border-radius:8px;z-index:100';document.body.appendChild(t);setTimeout(()=>t.remove(),1800)}
+let CATS=JSON.parse(localStorage.getItem('vrCategories')||'null')||[
+  {name:'Televisions',icon:'📺'},{name:'Refrigerators',icon:'🧊'},{name:'Air Conditioners',icon:'❄️'},
+  {name:'Washing Machines',icon:'🧺'},{name:'Laptops',icon:'💻'},{name:'Mobile Phones',icon:'📱'},
+  {name:'Small Appliances',icon:'🏠'},{name:'Accessories',icon:'🎧'}
+];
+let ADMIN_TAB='dashboard', editingProductId=null, editingCatIndex=null;
+
+function saveData(){
+  localStorage.setItem('vrProducts',JSON.stringify(P));
+  localStorage.setItem('vrCategories',JSON.stringify(CATS));
+  localStorage.setItem('vrOrders',JSON.stringify(O));
+  localStorage.setItem('vrCart',JSON.stringify(C));
+  localStorage.setItem('vrWish',JSON.stringify(W));
+}
+function renderNav(){
+  const n=document.getElementById('navCats'); if(!n)return;
+  n.innerHTML='<button onclick="cat(\'All\')">All</button>'+
+    CATS.map(c=>`<button onclick='cat(${JSON.stringify(c.name)})'>${c.name}</button>`).join('')+
+    '<button onclick="cat(\'Offers\')">🔥 Offers</button>';
+}
+function renderCats(){
+  const el=document.getElementById('catTiles'); if(!el)return;
+  el.innerHTML=CATS.slice(0,8).map(c=>`<div class="cat" onclick='cat(${JSON.stringify(c.name)})'><span>${c.icon||'🛍️'}</span>${c.name}</div>`).join('');
+}
+function syncUI(){renderNav();renderCats();render();saveData();save();}
+function adminLogin(){
+  const u=prompt('Admin username:','admin'); if(u===null)return;
+  const p=prompt('Admin password:'); if(u==='admin'&&p==='VR@12345'){document.getElementById('admin').classList.remove('hidden');adminTab('dashboard');}
+  else alert('Invalid Admin login.');
+}
+function closeAdmin(){document.getElementById('admin').classList.add('hidden');}
+function adminTab(t){ADMIN_TAB=t;['dashboard','products','categories','orders','settings'].forEach(x=>{let b=document.getElementById('tab'+x.charAt(0).toUpperCase()+x.slice(1));if(b)b.classList.toggle('on',x===t)});renderAdmin();}
+function renderAdmin(){
+  const el=document.getElementById('adminContent');
+  if(ADMIN_TAB==='dashboard')return el.innerHTML=adminDashboard();
+  if(ADMIN_TAB==='products')return el.innerHTML=adminProducts();
+  if(ADMIN_TAB==='categories')return el.innerHTML=adminCategories();
+  if(ADMIN_TAB==='orders')return el.innerHTML=adminOrders();
+  el.innerHTML=adminSettings();
+}
+function adminDashboard(){
+  const value=P.reduce((a,p)=>a+p.sale,0), ordersTotal=O.reduce((a,o)=>a+Number(o.total||0),0);
+  return `<div class="statGrid">
+    <div class="stat">Products<b>${P.length}</b></div>
+    <div class="stat">Categories<b>${CATS.length}</b></div>
+    <div class="stat">Orders<b>${O.length}</b></div>
+    <div class="stat">Order Value<b>${money(ordersTotal)}</b></div>
+  </div>
+  <div class="adminCard"><h3>Editable Store</h3>
+  <p>This same page now lets you change product photographs, names, brands, categories, prices, ratings and stock status; create/delete categories; and edit customer orders/transactions. Changes are saved in this browser using localStorage.</p>
+  <div class="adminActions"><button class="goldBtn" onclick="adminTab('products')">Manage Products</button><button class="goldBtn" onclick="adminTab('categories')">Manage Categories</button><button class="goldBtn" onclick="adminTab('orders')">Manage Transactions</button></div></div>`;
+}
+function adminProducts(){
+  return `<div class="adminCard"><h3>${editingProductId?'Edit Product':'Add New Product'}</h3>
+  <div class="adminGrid">
+    <div><label>Product Name</label><input id="apName"></div>
+    <div><label>Brand</label><input id="apBrand"></div>
+    <div><label>Category</label><select id="apCat">${CATS.map(c=>`<option>${c.name}</option>`).join('')}</select></div>
+    <div><label>Rating</label><input id="apRating" type="number" min="0" max="5" step=".1" value="4.5"></div>
+    <div><label>MRP</label><input id="apMrp" type="number"></div>
+    <div><label>Sale Price</label><input id="apSale" type="number"></div>
+    <div><label>Stock Status</label><select id="apStock"><option>In Stock</option><option>Out of Stock</option></select></div>
+    <div><label>Product Photo</label><input id="apImg" type="file" accept="image/*" onchange="previewPhoto(event)"></div>
+    <div class="full"><img id="photoPreview" class="preview" alt="Photo preview"></div>
+  </div>
+  <div class="adminActions" style="margin-top:12px"><button class="goldBtn" onclick="saveProduct()">Save Product</button><button onclick="clearProductForm()">Clear</button></div></div>
+  <div class="adminCard"><h3>All Products</h3>
+  <table class="adminTable"><thead><tr><th>Photo</th><th>Product</th><th>Brand</th><th>Category</th><th>MRP</th><th>Sale</th><th>Stock</th><th>Action</th></tr></thead><tbody>
+  ${P.map(p=>`<tr><td><img class="adminThumb" src="${p.img}"></td><td>${p.name}</td><td>${p.brand}</td><td>${p.cat}</td><td>${money(p.mrp)}</td><td>${money(p.sale)}</td><td>${p.stock||'In Stock'}</td><td><div class="adminActions"><button class="goldBtn" onclick="editProduct(${p.id})">Edit</button><button class="danger" onclick="deleteProduct(${p.id})">Delete</button></div></td></tr>`).join('')}
+  </tbody></table></div>`;
+}
+function editProduct(id){
+  const p=P.find(x=>x.id===id);if(!p)return;editingProductId=id;adminTab('products');
+  setTimeout(()=>{apName.value=p.name;apBrand.value=p.brand;apCat.value=p.cat;apRating.value=p.rating||4.5;apMrp.value=p.mrp;apSale.value=p.sale;apStock.value=p.stock||'In Stock';photoPreview.src=p.img;},0);
+}
+function clearProductForm(){editingProductId=null;adminTab('products');setTimeout(()=>{['apName','apBrand','apMrp','apSale'].forEach(id=>document.getElementById(id).value='');apRating.value=4.5;apStock.value='In Stock';photoPreview.removeAttribute('src');},0)}
+function previewPhoto(e){const f=e.target.files[0];if(f){const r=new FileReader();r.onload=()=>photoPreview.src=r.result;r.readAsDataURL(f)}}
+function saveProduct(){
+  if(!apName.value||!apBrand.value||!apMrp.value||!apSale.value)return alert('Fill product name, brand and prices.');
+  const old=editingProductId?P.find(x=>x.id===editingProductId):null;
+  const photo=photoPreview.src&&photoPreview.src!=='about:blank'?photoPreview.src:(old?old.img:'');
+  const data={id:editingProductId||Date.now(),name:apName.value.trim(),brand:apBrand.value.trim(),cat:apCat.value,mrp:Number(apMrp.value),sale:Number(apSale.value),img:photo,rating:Number(apRating.value||4.5),stock:apStock.value};
+  if(editingProductId){Object.assign(old,data)}else P.unshift(data);
+  editingProductId=null;syncUI();adminTab('products');alert('Product saved successfully.');
+}
+function deleteProduct(id){if(confirm('Delete this product?')){P=P.filter(p=>p.id!==id);C=C.filter(x=>x.id!==id);W=W.filter(x=>x!==id);syncUI();adminTab('products')}}
+function adminCategories(){
+  return `<div class="adminCard"><h3>${editingCatIndex!==null?'Edit Category':'Add Category'}</h3>
+  <div class="adminGrid"><div><label>Category Name</label><input id="acName"></div><div><label>Icon / Emoji</label><input id="acIcon" value="🛍️"></div></div>
+  <div class="adminActions" style="margin-top:12px"><button class="goldBtn" onclick="saveCategory()">Save Category</button><button onclick="clearCategory()">Clear</button></div></div>
+  <div class="adminCard"><h3>Categories</h3><table class="adminTable"><thead><tr><th>Icon</th><th>Category</th><th>Products</th><th>Action</th></tr></thead><tbody>
+  ${CATS.map((c,i)=>`<tr><td>${c.icon||'🛍️'}</td><td>${c.name}</td><td>${P.filter(p=>p.cat===c.name).length}</td><td><div class="adminActions"><button class="goldBtn" onclick="editCategory(${i})">Edit</button><button class="danger" onclick="deleteCategory(${i})">Delete</button></div></td></tr>`).join('')}
+  </tbody></table></div>`;
+}
+function editCategory(i){editingCatIndex=i;adminTab('categories');setTimeout(()=>{acName.value=CATS[i].name;acIcon.value=CATS[i].icon||'🛍️'},0)}
+function clearCategory(){editingCatIndex=null;adminTab('categories')}
+function saveCategory(){
+  if(!acName.value.trim())return alert('Enter category name.');
+  const name=acName.value.trim(), icon=acIcon.value||'🛍️';
+  if(editingCatIndex!==null){const old=CATS[editingCatIndex].name;CATS[editingCatIndex]={name,icon};P.forEach(p=>{if(p.cat===old)p.cat=name})}
+  else {if(CATS.some(c=>c.name.toLowerCase()===name.toLowerCase()))return alert('Category already exists.');CATS.push({name,icon})}
+  editingCatIndex=null;syncUI();adminTab('categories');
+}
+function deleteCategory(i){
+  if(P.some(p=>p.cat===CATS[i].name))return alert('Move or edit products in this category before deleting it.');
+  if(confirm('Delete this category?')){CATS.splice(i,1);syncUI();adminTab('categories')}
+}
+function adminOrders(){
+  return `<div class="adminCard"><h3>Orders / Shopping Transactions</h3>
+  <p>Edit customer name, payment method, total and order status directly below.</p>
+  <table class="adminTable"><thead><tr><th>Order No.</th><th>Date</th><th>Customer</th><th>Total</th><th>Payment</th><th>Status</th><th>Action</th></tr></thead><tbody>
+  ${O.length?O.map((o,i)=>`<tr><td>${o.no}</td><td>${o.date}</td><td><input id="on${i}" value="${(o.name||'').replace(/"/g,'&quot;')}"></td><td><input id="ot${i}" type="number" value="${Number(o.total||0)}" style="width:110px"></td><td><select id="op${i}">${['UPI','Credit / Debit Card','Net Banking','Cash on Delivery','EMI — Bajaj Finserv','EMI — HDFC','EMI — ICICI','EMI — TVS Credit'].map(x=>`<option ${x===o.payment?'selected':''}>${x}</option>`).join('')}</select></td><td><select id="os${i}">${['Confirmed','Processing','Packed','Shipped','Out for Delivery','Delivered','Cancelled','Returned'].map(x=>`<option ${x===o.status?'selected':''}>${x}</option>`).join('')}</select></td><td><div class="adminActions"><button class="goldBtn" onclick="updateOrder(${i})">Save</button><button class="danger" onclick="deleteOrder(${i})">Delete</button></div></td></tr>`).join(''):'<tr><td colspan="7">No customer transactions yet.</td></tr>'}
+  </tbody></table></div>`;
+}
+function updateOrder(i){O[i].name=document.getElementById('on'+i).value;O[i].total=Number(document.getElementById('ot'+i).value);O[i].payment=document.getElementById('op'+i).value;O[i].status=document.getElementById('os'+i).value;saveData();adminTab('orders');toast('Order updated')}
+function deleteOrder(i){if(confirm('Delete this transaction?')){O.splice(i,1);saveData();adminTab('orders')}}
+function adminSettings(){
+  return `<div class="adminCard"><h3>Store Information</h3><div class="adminGrid">
+  <div><label>Store Name</label><input id="stName" value="VR Electronics Retail"></div>
+  <div><label>Mobile / WhatsApp</label><input id="stPhone" value="+91 98765 43210"></div>
+  <div><label>Email</label><input id="stEmail" value="info@vrelectronics.in"></div>
+  <div class="full"><label>Address</label><textarea id="stAddress" rows="2">Shop No. 5 & 6, Vraj Plaza, L.T. Road, Borivali West, Mumbai, Maharashtra 400092</textarea></div>
+  </div><div class="adminActions" style="margin-top:12px"><button class="goldBtn" onclick="saveSettings()">Save Store Settings</button></div></div>
+  <div class="adminCard"><h3>Data Backup</h3><p>Download the current editable store data as JSON, or restore a previously exported file.</p><div class="adminActions"><button class="goldBtn" onclick="exportStore()">Export Store Data</button><label style="background:#111;color:#fff;padding:8px 10px;border-radius:6px;cursor:pointer">Import Store Data <input type="file" accept=".json" onchange="importStore(event)" style="display:none"></label></div></div>
+  <div class="adminCard"><h3>Demo Admin Access</h3><p><b>Username:</b> admin &nbsp; <b>Password:</b> VR@12345</p><p style="color:#a00">For production, replace this browser-only demo login with a secure server-side authentication system.</p></div>`;
+}
+function saveSettings(){localStorage.setItem('vrStoreSettings',JSON.stringify({name:stName.value,phone:stPhone.value,email:stEmail.value,address:stAddress.value}));alert('Store settings saved in this browser.')}
+function exportStore(){
+  const data={products:P,categories:CATS,orders:O,cart:C,wishlist:W,settings:JSON.parse(localStorage.getItem('vrStoreSettings')||'{}')};
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.download='vr-electronics-store-backup.json';a.click();
+}
+function importStore(e){
+  const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(d.products)P=d.products;if(d.categories)CATS=d.categories;if(d.orders)O=d.orders;if(d.cart)C=d.cart;if(d.wishlist)W=d.wishlist;if(d.settings)localStorage.setItem('vrStoreSettings',JSON.stringify(d.settings));syncUI();adminTab('dashboard');alert('Store data imported.')}catch(err){alert('Invalid backup file.')}};r.readAsText(f)
+}
+renderNav();renderCats();
+
+save();render();
+</script></body></html>
